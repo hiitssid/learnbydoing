@@ -1,4 +1,4 @@
-*   {
+{
     box-sizing: border-box;
     margin: 0;
 }
@@ -15,7 +15,7 @@ body    {
 
 .hero-image {
 position: absolute;
-width: 1000px;
+width: 400px;
 height: 480px;
 left: 150px;
 top: 150px;
@@ -62,3 +62,12 @@ font-size: 24px;
 line-height: 28px;
 color: #C6D8D3;
 }
+
+footer   {
+    position: absolute;
+    left: 650px;
+    top: 600px;
+    text-align: center;
+    padding: 3px;
+    color: #C6D8D3;
+    }
