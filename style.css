@@ -1,4 +1,4 @@
-{
+* {
     box-sizing: border-box;
     margin: 0;
 }
@@ -62,12 +62,3 @@ font-size: 24px;
 line-height: 28px;
 color: #C6D8D3;
 }
-
-footer   {
-    position: absolute;
-    left: 650px;
-    top: 600px;
-    text-align: center;
-    padding: 3px;
-    color: #C6D8D3;
-    }
