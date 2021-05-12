@@ -1,9 +1,10 @@
 "user strict";
 window.onload = function () {
   let ran = Math.trunc(Math.random() * 999999);
-  let ranvalue = `#${ran}`;
-  document.querySelector("body").style.backgroundColor = ranvalue;
+  document.querySelector("body").style.backgroundColor = `#${ran}`;
 };
+
+
 
 let secretNumber = Math.trunc(Math.random() * 5) + 1;
 console.log(`cheat: ${secretNumber}`);
@@ -27,16 +28,34 @@ btThree.textContent = Number(3);
 btFour.textContent = Number(4);
 btFive.textContent = Number(5);
 
+let glife = "";
+let gamelife = function () {
+  if (score == 3) {
+    glife = "💚💚💚";
+    lifeReamining.textContent = glife;
+  } else if (score == 2) {
+    glife = "💛💛";
+    lifeReamining.textContent = glife;
+  } else if (score == 1) {
+    glife = "💔";
+    lifeReamining.textContent = glife;
+  } else {
+    glife = "👻";
+    lifeReamining.textContent = glife;
+  }
+  return glife;
+};
+
 btOne.addEventListener("click", function () {
   if (btOne.textContent != secretNumber) {
     message.textContent = "Wrong Guess!  Try Again";
     message.style.color = "#ff0000";
     btOne.style.backgroundColor = "#ff0000";
     score--;
-    lifeReamining.textContent = score;
+    lifeReamining.textContent = gamelife();
     if (score < 1) {
       message.textContent = "GAME OVER";
-      lifeReamining.textContent = "0";
+      lifeReamining.textContent = gamelife();;
       hideAllbut.classList.toggle("hidden");
       revealbut.classList.toggle("hidden");
       number.textContent = secretNumber;
@@ -59,10 +78,10 @@ btTwo.addEventListener("click", function () {
     message.style.color = "#ff0000";
     btTwo.style.backgroundColor = "#ff0000";
     score--;
-    lifeReamining.textContent = score;
+    lifeReamining.textContent = gamelife();
     if (score < 1) {
       message.textContent = "GAME OVER";
-      lifeReamining.textContent = "0";
+      lifeReamining.textContent = gamelife();
       hideAllbut.classList.toggle("hidden");
       revealbut.classList.toggle("hidden");
       number.textContent = secretNumber;
@@ -86,10 +105,10 @@ btThree.addEventListener("click", function () {
     message.style.color = "#ff0000";
     btThree.style.backgroundColor = "#ff0000";
     score--;
-    lifeReamining.textContent = score;
+    lifeReamining.textContent = gamelife();
     if (score < 1) {
       message.textContent = "GAME OVER";
-      lifeReamining.textContent = "0";
+      lifeReamining.textContent = gamelife();
       hideAllbut.classList.toggle("hidden");
       revealbut.classList.toggle("hidden");
       number.textContent = secretNumber;
@@ -113,10 +132,10 @@ btFour.addEventListener("click", function () {
     message.style.color = "#ff0000";
     btFour.style.backgroundColor = "#ff0000";
     score--;
-    lifeReamining.textContent = score;
+    lifeReamining.textContent = gamelife();
     if (score < 1) {
       message.textContent = "GAME OVER";
-      lifeReamining.textContent = "0";
+      lifeReamining.textContent = gamelife();
       hideAllbut.classList.toggle("hidden");
       revealbut.classList.toggle("hidden");
       number.textContent = secretNumber;
@@ -140,10 +159,10 @@ btFive.addEventListener("click", function () {
     message.style.color = "#ff0000";
     btFive.style.backgroundColor = "#ff0000";
     score--;
-    lifeReamining.textContent = score;
+    lifeReamining.textContent = gamelife();
     if (score < 1) {
       message.textContent = "GAME OVER";
-      lifeReamining.textContent = "0";
+      lifeReamining.textContent = gamelife();
       hideAllbut.classList.toggle("hidden");
       revealbut.classList.toggle("hidden");
       winLose.textContent = "OH SORRY! 😭 YOU LOSE!";
