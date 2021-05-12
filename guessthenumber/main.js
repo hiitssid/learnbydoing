@@ -1,4 +1,9 @@
 "user strict";
+window.onload = function () {
+  let ran = Math.trunc(Math.random() * 999999);
+  let ranvalue = `#${ran}`;
+  document.querySelector("body").style.backgroundColor = ranvalue;
+};
 
 let secretNumber = Math.trunc(Math.random() * 5) + 1;
 console.log(`cheat: ${secretNumber}`);
