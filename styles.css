@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+  background-color: #99aab5;
+}
+.page-title {
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Project Page CSS */
+.project-container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 10rem;
+  justify-content: space-evenly;
+  flex: 2 1 40rem;
+
+  flex-direction: column;
+}
+.box1,
+.box2,
+.box3 {
+  border: 1px solid white;
+  max-width: 20%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #383b58;
+}

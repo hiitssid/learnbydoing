@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nibccs.css" />
+    <title>Content Support v 0.0.1</title>
+  </head>
+  <body>
+    <header>Content Support 0.0.1</header>
+    <div class="container">
+      <!-- start of main container -->
+
+      <div class="container_one">
+        <!-- start of container one -->
+        <label for="title">Title</label><input type="text" id="title" /><br />
+        <label for="author">Author</label
+        ><input type="text" id="author" /><br />
+        <label for="publication">Publication</label
+        ><input type="text" id="publication" /><br />
+        <label for="isbn">ISBN</label><input type="text" id="isbn" /><br />
+        <label for="genre">Genre</label><input type="text" id="genre" /><br />
+        <button onclick="book()">RUN</button>
+      </div>
+      <!-- end of container one -->
+      <div class="container_two">
+        <!-- start of container two -->
+        <button id="titlebyauthor" onclick="copyTitleByAuthor()">
+          Title by Author</button
+        ><br />
+        <button id="authormsg" onclick="copyAuthor()">Author</button><br />
+        <button id="publicationmsg" onclick="copyPublication()">
+          Publication</button
+        ><br />
+        <button id="isbnmsg" onclick="copyISBN()">ISBN</button><br />
+        <button id="genremsg" onclick="copyGenre()">Genre</button><br />
+        <button id="inpackagemsg" onclick="copyInPackage()">In Package</button
+        ><br />
+      </div>
+      <!-- end of container two -->
+    </div>
+    <!--end of main container closed-->
+    <script src="nibccs-main.js"></script>
+  </body>
+</html>

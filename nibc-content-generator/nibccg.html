@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nibccg.css" />
+    <title>NIBC Daraz Content Generator 1.2</title>
+  </head>
+  <body>
+    <div class="header">
+      <input type="button" class="button_reload" value="Reload" onclick="reload()" />
+      <input type="button" class="button_close" value="Close" onclick="closeMe()" />
+    <h2>NIBC Daraz Content Generator 1.2</h2 >
+    </div>
+    <div class="row">
+      <div class="result column3">
+        
+      </div>
+      <div class="form column">
+            
+        <label>Title:</label>
+        <input type="text" name="title" id="title" />  <button onclick="copyTitle()">Copy</button>
+        <br />
+        <label>Author:</label>
+        <input type="text" name="author" id="author" />  <button onclick="copyAuthor()">Copy</button>
+        <br />
+
+        <label>Publication:</label>
+        <input type="text" name="publication" id="publication" />  <button onclick="copyPublication()">Copy</button>
+        
+
+        <!--<select name="publication" id="publication">  
+          <option value=""></option>
+          <option value="Penguin">Penguin</option>
+          <option value="HarperCollins">HarperCollins</option>
+          <option value="Manjul Publishing">Manjul Publishing</option>
+          <option value="Red Panda">Red Panda</option>
+          <option value="Prabhat Prakashan">Prabhat Prakashan</option>
+          </select>
+        -->
+        <br />
+
+        
+        
+        <label>Language:</label>
+        <select name="language" id="language">
+          <option value=""></option>
+          <option value="Nepali">Nepali</option>
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+        </select>
+        <br />
+        
+
+        <label>Pages:</label>
+        <input type="number" name="pages" id="pages" />  <button onclick="copyPages()">Copy</button>
+        <br />
+        <label>Format:</label>
+        <select name="format" id="format">
+          <option value="Paperback">Paperback</option>
+          <option value="Hardback">Hardback</option>
+        </select>
+        <br />
+        <label>ISBN:</label>
+        <input type="number" name="isbn" id="isbn" /> <button onclick="copyISBN()">Copy</button>
+         <br> 
+
+         <label>Genre:</label>
+        <input type="text" name="genre" id="genre" />  <button onclick="copyGenre()">Copy</button>
+        <br />
+        <label>Price INR:</label>
+        <input type="number" name="priceinr" id="priceinr" />
+        
+      </form>
+      <input type="button" value="RUN" onclick="myFunction()" />
+    </div>
+
+    <br />
+    <br />
+    <div class="result column2">
+      ISBN: <span class="isbnmsg"></span>
+      <br />
+      Author: <span class="authormsg"></span>
+      <br />
+      Genre: <span class="genremsg"></span>
+      <br />
+      Publication: <span class="publicationmsg"></span>
+      <br />
+      Pages: <span class="pagesmsg"></span><span>pages</span>
+      <br />
+      Format: <span class="formatmsg"></span>
+      <br />
+      Language: <span class="languagemsg"></span> <br /><br />
+      
+        <span class="titleAuthorMsg" id = "copy_title_author_msg"> 
+          <br /> 
+        </span>
+        <!--<button onclick="copyTitleAuthorMsg()">Copy</button>
+        -->
+        <br /><br />
+      
+      <span class="inpackagemsg"></span>
+      <br /><br />
+      <span class="pricenrsmsg"></span>
+      <br />
+     
+    </div>
+    
+    <script src="nibccg-main.js"></script>
+  </div>
+</body>
+</html>
