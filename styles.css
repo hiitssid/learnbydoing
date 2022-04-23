@@ -25,11 +25,8 @@ body {
 
   flex-direction: column;
 }
-.box1,
-.box2,
-.box3 {
-  border: 1px solid white;
-  max-width: 20%;
+.box{
+ 
   text-align: center;
 }
 
@@ -38,5 +35,15 @@ a {
   color: #fff;
 }
 a:hover {
-  color: #383b58;
+  color: #536878;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.boxright{
+  background: #383b58;
+}
+.boxleft{
+  background: #536878;
 }
