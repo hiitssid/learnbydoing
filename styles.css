@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
 }
+
 :root {
   --100: #ffffff;
   --200: #e3f6f5;
@@ -20,27 +22,40 @@ a:visited {
 }
 
 body {
-  background-color: var(--500);
+  background-color: var(--400);
   color: var(--100);
   display: flex;
   justify-content: center;
-}
-.card-introduction {
+  align-items: center;
   height: 100vh;
-  background-color: var(--400);
-  width: 100vw;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+p {
+  width: 25rem;
+  font-weight: 300;
+}
+
+.card-introduction {
+  height: 70vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
+
 .card-introduction img {
   height: 200px;
   border-radius: 50%;
   box-shadow: 0px 0px 5px var(--500);
+  border: 3px solid var(--300);
 }
+
 .card-social ul {
   width: 200px;
   list-style: none;
@@ -49,9 +64,6 @@ body {
   font-size: 24px;
 }
 
-@media screen and (min-width: 700px) {
-  .card-introduction {
-    /* display: grid; */
-    grid-template-columns: repeat(2, 1fr);
-  }
+a:hover {
+  color: var(--300);
 }
