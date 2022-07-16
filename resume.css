@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid lime; */
+}
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+header {
+  display: flex;
+  width: 700px;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 20px; */
+  padding: 20px;
+}
+
+header img {
+  height: 200px;
+  border-radius: 50%;
+  /* margin-right: 100px; */
+}
+header p {
+  width: 300px;
+  margin-top: 20px;
+}
+
+/* .contact ul {
+  display: flex;
+  justify-content: space-between;
+} */
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.work {
+  padding: 20px;
+}
+
+.work-experience {
+  padding: 10px 10px;
+  display: flex;
+
+  /* justify-content: space-between; */
+}
+.work-experience div:first-child {
+  width: 210px;
+}
+
+.projects div {
+  padding: 10px 20px;
+  display: flex;
+}
+.projects div ul:first-child {
+  padding-right: 50px;
+}
+.education h3,
+.contact h3 {
+  padding-bottom: 10px;
+}
+.contact div {
+  padding-left: 20px;
+}
+footer {
+  margin-bottom: 40px;
+  text-align: end;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px;
+  position: absolute;
+  right: 50px;
+}
+button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.fa-solid,
+.fa-brands {
+  margin-right: 7px;
+  font-size: 16px;
+}
