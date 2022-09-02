@@ -30,6 +30,7 @@ header {
   align-items: center;
   /* margin-top: 20px; */
   padding: 20px;
+  position: relative;
 }
 
 header img {
@@ -87,14 +88,17 @@ footer {
 }
 
 button {
-  background-color: #eee;
+  background-color: #2160c4;
   border: none;
   padding: 5px;
   position: absolute;
-  right: 50px;
+  right:0;
+  top:50px;
+  color:#fff;
+  border-radius:5px
 }
 button:hover {
-  background-color: #ccc;
+  background-color: #5188e1;
   cursor: pointer;
 }
 
@@ -102,4 +106,9 @@ button:hover {
 .fa-brands {
   margin-right: 7px;
   font-size: 16px;
+}
+@media print{
+      .noprint{
+        visibility: hidden;
+      }
 }
