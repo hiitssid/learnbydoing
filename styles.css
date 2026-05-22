@@ -67,3 +67,8 @@ p {
 a:hover {
   color: var(--300);
 }
+
+.spotify{
+  width: 30%;
+  height: 80%
+}
